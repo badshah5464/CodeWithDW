@@ -49,8 +49,9 @@
 
     .navigation {
         position: absolute;
-        background-color: red;
+        background-color: hwb(0 0% 15%);
         padding: .5em;
+        box-shadow: -1px 1px 4px rgba(255, 255, 255, 0.5);
         transition: .5s;
         -webkit-transition: .5s;
         -moz-transition: .5s;
