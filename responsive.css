@@ -49,10 +49,7 @@
 
     .navigation {
         position: absolute;
-        top: -1000px;
         background-color: red;
-        right: 0;
-        z-index: -1;
         padding: .5em;
         transition: .5s;
         -webkit-transition: .5s;
@@ -64,11 +61,13 @@
         -moz-border-radius: 0 0 0 30px;
         -ms-border-radius: 0 0 0 30px;
         -o-border-radius: 0 0 0 30px;
+        top: -1000px;
+        right: 0;
     }
 
     .navigation-response {
         padding: .5em;
-        /* top: 7em; */
-        top: 100px;
+        top: 106px;
+        /* top: 100px; */
     }
 }
