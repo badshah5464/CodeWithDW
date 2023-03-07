@@ -1,4 +1,8 @@
-/*? index-header  */
+/*! HEADER  */
+.index-header {
+    position: fixed;
+    width: 100%;
+}
 
 /* * header-heading */
 .header-heading {
@@ -124,7 +128,11 @@ nav {
     color: wheat;
 }
 
-main {
+/*! MAIN */
+.index-main {
     height: 100vh;
     background: var(--red-royal);
+    padding: 7.1em 0 0 0;
+    text-shadow: 0 0 1px black;
+    color: white;
 }
