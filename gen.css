@@ -17,7 +17,7 @@ html {
     --a-header: 'Tilt Warp', cursive;
 
     /** Color's */
-    --red-royal: linear-gradient(90deg, #070000 0%, #4c0001 50%, #070000 100%);
+    --red-royal: linear-gradient(90deg, hwb(0 0% 90%) 0%, hwb(359 0% 50%) 50%, hwb(0 0% 90%) 100%);
     --premium-blue: linear-gradient(90deg, #b7f8db 0%, #50a7c2 100%);
     --metal-white: linear-gradient(90deg, #ada996 0%, #f2f2f2 33%, #dbdbdb 66%, #eaeaea 100%);
 }
