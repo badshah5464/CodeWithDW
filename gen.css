@@ -27,6 +27,7 @@ html {
 .down {
     position: absolute;
     display: none;
+    cursor: pointer;
 }
 
 .hover:hover .down {

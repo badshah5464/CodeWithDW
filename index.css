@@ -1,23 +1,23 @@
 /*? index-header  */
+
+/* * header-heading */
 .header-heading {
     text-align: center;
     background-color: green;
     padding: .2em 0;
     font-family: var(--header-heading);
     font-weight: 600;
-    font-size: .8em;
+    font-size: .9em;
     letter-spacing: .3em;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
+/* * nav */
 nav {
     padding: .3em 5em;
     background: red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo {
@@ -51,4 +51,9 @@ nav {
 
 .navigation>ul>li>a>span {
     display: block;
+}
+
+/** leng-detail */
+.leng-detail {
+    display: flex;
 }
