@@ -33,17 +33,32 @@
                 </div>
             </div>
             <!-- navigation -->
-            <div class="navigation-mobile">
+            <div class="navigation-mobile" id="navigationIcon">
                 <i class="fa-solid fa-bars"></i>
             </div>
-            <div class="navigation">
+            <div class="navigation" id="navigationDetail">
                 <ul>
-                    <li><a href=""><span class="navigation-icon"><i class="fa-solid fa-house"></i></span><span>Home</span></a></li>
-                    <li><a href=""><span class="navigation-icon"><i class="fa-solid fa-code"></i></span><span>Basic Starting</span></a></li>
-                    <li><a href=""><span class="navigation-icon"><i class="fa-solid fa-circle-info"></i></span><span>About</span></a></li>
+                    <li><a href=""><span class="navigation-icon"><i
+                                    class="fa-solid fa-house"></i></span><span>Home</span></a></li>
+                    <li><a href=""><span class="navigation-icon"><i class="fa-solid fa-code"></i></span><span>Basic
+                                Starting</span></a></li>
+                    <li><a href=""><span class="navigation-icon"><i
+                                    class="fa-solid fa-circle-info"></i></span><span>About</span></a></li>
                 </ul>
             </div>
         </nav>
+        <!--! Navigation script  -->
+        <script>
+            let navigationIcon = document.getElementById("navigationIcon");
+            let navigationDetail = document.getElementById("navigationDetail");
+            navigationIcon.addEventListener("click", function () {
+                if (navigationDetail.className === "navigation") {
+                    navigationDetail.className += " navigation-response";
+                } else {
+                    navigationDetail.className = "navigation";
+                }
+            })
+        </script>
         <!-- * leng-detail -->
         <section class="leng-detail">
             <!-- language -->

@@ -48,14 +48,25 @@
 
     .navigation {
         position: absolute;
-        top: 7em;
-        left: -1000px;
-        padding: .5em;
+        top: -1000px;
         background-color: red;
-    }
-
-    .navigation-response {
         right: 0;
+        z-index: -1;
+        transition: .5s;
+        -webkit-transition: .5s;
+        -moz-transition: .5s;
+        -ms-transition: .5s;
+        -o-transition: .5s;
+        border-radius: 0 0 0 30px;
+        -webkit-border-radius: 0 0 0 30px;
+        -moz-border-radius: 0 0 0 30px;
+        -ms-border-radius: 0 0 0 30px;
+        -o-border-radius: 0 0 0 30px;
+}
+    
+    .navigation-response {
+        padding: .5em;
+        top: 30vh;
     }
 
 }
