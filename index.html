@@ -12,6 +12,7 @@
     <!--* style's  -->
     <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="./gen.css">
+    <link rel="stylesheet" href="./index-main.css">
     <link rel="stylesheet" href="./responsive.css">
 </head>
 
@@ -36,7 +37,7 @@
             <div class="navigation-mobile" id="navigationIcon">
                 <i class="fa-solid fa-bars"></i>
             </div>
-            <div class="navigation" id="navigationDetail">
+            <div class="navigation-detail" id="navigationDetail">
                 <ul>
                     <li><a href=""><span class="navigation-icon"><i
                                     class="fa-solid fa-house"></i></span><span>Home</span></a></li>
@@ -48,17 +49,7 @@
             </div>
         </nav>
         <!--! Navigation script  -->
-        <script>
-            let navigationIcon = document.getElementById("navigationIcon");
-            let navigationDetail = document.getElementById("navigationDetail");
-            navigationIcon.addEventListener("click", function () {
-                if (navigationDetail.className === "navigation") {
-                    navigationDetail.className += " navigation-response";
-                } else {
-                    navigationDetail.className = "navigation";
-                }
-            })
-        </script>
+
         <!-- * leng-detail -->
         <section class="leng-detail">
             <!-- language -->
@@ -93,9 +84,39 @@
 
     <!--* Main  -->
     <main class="index-main">
-        <h1 style="border: 3px solid white;">This is a heading</h1>
+
+        <section class="main-title">
+            <div class="main-title-img">
+                <img src="./main-title-img.jpg" alt="main-title-image">
+            </div>
+            <div class="main-title-about">
+                <div class="line"></div>
+                <div>
+                    <h2>learning Fullstack <br> Web Development</h2>
+                </div>
+                <div class="line"></div>
+            </div>
+        </section>
+
+        <section class="AboutHTML">
+            <div class="html-title">
+
+            </div>
+        </section>
+
     </main>
 
 </body>
+<script>
+    let navigationIcon = document.getElementById("navigationIcon");
+    let navigationDetail = document.getElementById("navigationDetail");
+    navigationIcon.addEventListener("click", function () {
+        if (navigationDetail.className === "navigation-detail") {
+            navigationDetail.className += " navigation-response";
+        } else {
+            navigationDetail.className = "navigation-detail";
+        }
+    })
+</script>
 
 </html>

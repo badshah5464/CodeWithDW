@@ -2,6 +2,7 @@
 .index-header {
     position: fixed;
     width: 100%;
+    z-index: 1;
 }
 
 /* * header-heading */
@@ -29,6 +30,7 @@
 
 /* * nav */
 nav {
+    position: relative;
     padding: .3em 5em;
     background: hwb(0 0% 85%);
     display: flex;
@@ -43,8 +45,8 @@ nav {
     justify-content: center;
     overflow: hidden;
     height: auto;
-    animation: RightToLeft 1s ease forwards .5s;
-    -webkit-animation: RightToLeft 1s ease forwards .5s;
+    animation: LeftToRight 1s ease forwards .5s;
+    -webkit-animation: LeftToRight 1s ease forwards .5s;
     transform: translateY(0px);
     -webkit-transform: translateY(0px);
     -moz-transform: translateY(0px);
@@ -71,11 +73,11 @@ nav {
     padding: .3em;
 }
 
-.navigation {
+.navigation-detail {
     overflow: hidden;
     height: auto;
-    animation: LeftToRight 1s ease forwards .5s;
-    -webkit-animation: LeftToRight 1s ease forwards .5s;
+    animation: RightToLeft 1s ease forwards .5s;
+    -webkit-animation: RightToLeft 1s ease forwards .5s;
     transform: translateX(0px);
     -webkit-transform: translateX(0px);
     -moz-transform: translateX(0px);
@@ -83,17 +85,17 @@ nav {
     -o-transform: translateX(0px);
 }
 
-.navigation>ul {
+.navigation-detail>ul {
     display: flex;
     align-items: center;
 }
 
-.navigation>ul>li {
+.navigation-detail>ul>li {
     list-style: none;
     margin: 0 2em;
 }
 
-.navigation>ul>li>a {
+.navigation-detail>ul>li>a {
     color: white;
     text-decoration: none;
     display: flex;
@@ -102,24 +104,24 @@ nav {
     font-family: var(--a-font);
 }
 
-.navigation>ul>li>a:hover {
-    text-shadow: 0 0 3px red;
-    transition: .5s ease-in-out;
-    -webkit-transition: .5s ease-in-out;
-    -moz-transition: .5s ease-in-out;
-    -ms-transition: .5s ease-in-out;
-    -o-transition: .5s ease-in-out;
+.navigation-detail>ul>li>a:hover {
+    color: red;
+    transition: .4s ease-in-out;
+    -webkit-transition: .4s ease-in-out;
+    -moz-transition: .4s ease-in-out;
+    -ms-transition: .4s ease-in-out;
+    -o-transition: .4s ease-in-out;
 }
 
-.navigation>ul>li>a>span {
+.navigation-detail>ul>li>a>span {
     display: block;
 }
 
 .navigation-mobile {
     display: none;
     overflow: hidden;
-    animation: LeftToRight 1s ease forwards .5s;
-    -webkit-animation: LeftToRight 1s ease forwards .5s;
+    animation: RightToLeft 1s ease forwards .5s;
+    -webkit-animation: RightToLeft 1s ease forwards .5s;
     transform: translateX(0px);
     -webkit-transform: translateX(0px);
     -moz-transform: translateX(0px);
@@ -162,6 +164,7 @@ nav {
     background-color: hwb(0 0% 15%);
     width: 10vw;
     padding: .5em 1em;
+    box-shadow: 0 0 5px white inset;
 }
 
 .hover:hover .down {
@@ -179,9 +182,40 @@ nav {
 
 /*! MAIN */
 .index-main {
-    height: 100vh;
     background: var(--red-royal);
     padding: 7.1em 0 0 0;
     text-shadow: 0 0 1px black;
     color: white;
+}
+
+/** main-title */
+.main-title {
+    margin: var(--main-margin);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: -1;
+}
+
+.main-title-about {
+    display: flex;
+    align-items: center;
+    animation: RightToLeft 1.5s ease forwards 1s;
+    -webkit-animation: RightToLeft 1.5s ease forwards 1s;
+}
+
+.main-title-about>div>h2 {
+    font-family: var(--main-heading);
+}
+
+.line {
+    border: .2em solid red;
+    margin: 0 2em;
+    width: 10vw;
+}
+
+.main-title-img>img {
+    width: 30vw;
+    animation: LeftToRight 1.5s ease forwards 1s;
+    -webkit-animation: LeftToRight 1.5s ease forwards 1s;
 }
