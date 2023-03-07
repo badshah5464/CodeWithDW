@@ -18,8 +18,8 @@
 }
 
 .header-heading>p {
-    animation: LeftToRight .5s ease forwards .5s;
-    -webkit-animation: LeftToRight .5s ease forwards .5s;
+    animation: TopToBottom .5s ease forwards .5s;
+    -webkit-animation: TopToBottom .5s ease forwards .5s;
     transform: translateX(1000px);
     -webkit-transform: translateX(1000px);
     -moz-transform: translateX(1000px);
@@ -45,11 +45,11 @@ nav {
     height: auto;
     animation: RightToLeft 1s ease forwards .5s;
     -webkit-animation: RightToLeft 1s ease forwards .5s;
-    transform: translateX(0px);
-    -webkit-transform: translateX(0px);
-    -moz-transform: translateX(0px);
-    -ms-transform: translateX(0px);
-    -o-transform: translateX(0px);
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
 }
 
 .logo-img>img {
@@ -118,7 +118,6 @@ nav {
 .navigation-mobile {
     display: none;
     overflow: hidden;
-    height: auto;
     animation: LeftToRight 1s ease forwards .5s;
     -webkit-animation: LeftToRight 1s ease forwards .5s;
     transform: translateX(0px);
@@ -134,21 +133,20 @@ nav {
     box-shadow: inset 0 0 3px black;
     color: wheat;
     font-family: var(--a-font);
-    overflow: hidden;
-    height: auto;
-    animation: RightToLeft 1s ease forwards .5s;
-    -webkit-animation: RightToLeft 1s ease forwards .5s;
-    transform: translateX(0px);
-    -webkit-transform: translateX(0px);
-    -moz-transform: translateX(0px);
-    -ms-transform: translateX(0px);
-    -o-transform: translateX(0px);
 }
 
 .code-detail>p {
     padding: 5px 0;
     text-decoration: none;
     font-weight: 600;
+    height: auto;
+    animation: LeftToRight 2s ease forwards .5s;
+    -webkit-animation: LeftToRight 2s ease forwards .5s;
+    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px);
 }
 
 .hover {
