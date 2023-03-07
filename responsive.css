@@ -53,6 +53,7 @@
         background-color: red;
         right: 0;
         z-index: -1;
+        padding: .5em;
         transition: .5s;
         -webkit-transition: .5s;
         -moz-transition: .5s;
@@ -70,5 +71,4 @@
         /* top: 7em; */
         top: 100px;
     }
-
 }
