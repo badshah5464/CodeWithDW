@@ -13,6 +13,18 @@
     font-weight: 900;
     font-size: .9em;
     letter-spacing: .3em;
+    overflow: hidden;
+    height: auto;
+}
+
+.header-heading>p {
+    animation: LeftToRight .5s ease forwards .5s;
+    -webkit-animation: LeftToRight .5s ease forwards .5s;
+    transform: translateX(1000px);
+    -webkit-transform: translateX(1000px);
+    -moz-transform: translateX(1000px);
+    -ms-transform: translateX(1000px);
+    -o-transform: translateX(1000px);
 }
 
 /* * nav */
@@ -29,6 +41,15 @@ nav {
     display: flex;
     align-items: end;
     justify-content: center;
+    overflow: hidden;
+    height: auto;
+    animation: RightToLeft 1s ease forwards .5s;
+    -webkit-animation: RightToLeft 1s ease forwards .5s;
+    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px);
 }
 
 .logo-img>img {
@@ -48,6 +69,18 @@ nav {
 
 .logo-name-greaterthan {
     padding: .3em;
+}
+
+.navigation {
+    overflow: hidden;
+    height: auto;
+    animation: LeftToRight 1s ease forwards .5s;
+    -webkit-animation: LeftToRight 1s ease forwards .5s;
+    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px);
 }
 
 .navigation>ul {
@@ -84,6 +117,15 @@ nav {
 
 .navigation-mobile {
     display: none;
+    overflow: hidden;
+    height: auto;
+    animation: RightToLeft 1s ease forwards .5s;
+    -webkit-animation: RightToLeft 1s ease forwards .5s;
+    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px);
 }
 
 /** leng-detail */
