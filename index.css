@@ -35,6 +35,11 @@ nav {
 .logo-name {
     font-family: var(--logo-title);
     font-size: 20px;
+    font-weight: 600;
+}
+
+.logo-name>p>span {
+    color: red;
 }
 
 .navigation>ul {
