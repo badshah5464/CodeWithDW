@@ -53,7 +53,31 @@ nav {
     display: block;
 }
 
+.navigation-mobile {
+    display: none;
+}
+
 /** leng-detail */
 .leng-detail {
-    display: flex;
+    background-color: blue;
+    padding: .5em 2em;
+}
+
+.hover {
+    position: relative;
+    display: inline-block;
+    margin: 0 1em;
+}
+
+.down {
+    position: absolute;
+    display: none;
+    cursor: pointer;
+    background-color: red;
+    padding: .5em 1em;
+    width: 10vw;
+}
+
+.hover:hover .down {
+    display: block;
 }

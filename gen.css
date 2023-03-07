@@ -19,19 +19,6 @@ html {
 
 /*! |||||||||||||||||||||||||||  */
 
-.hover {
-    position: relative;
-    display: inline-block;
-}
 
-.down {
-    position: absolute;
-    display: none;
-    cursor: pointer;
-}
-
-.hover:hover .down {
-    display: block;
-}
 
 /*! |||||||||||||||||||||||||||  */
