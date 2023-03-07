@@ -32,6 +32,7 @@
     }
 }
 
+/* * Android response is here */
 @media screen and (max-width:450px) {
     .navigation>ul {
         flex-direction: column;
@@ -62,11 +63,12 @@
         -moz-border-radius: 0 0 0 30px;
         -ms-border-radius: 0 0 0 30px;
         -o-border-radius: 0 0 0 30px;
-}
-    
+    }
+
     .navigation-response {
         padding: .5em;
-        top: 7em;
+        /* top: 7em; */
+        top: 100px;
     }
 
 }

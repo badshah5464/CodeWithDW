@@ -60,7 +60,6 @@ nav {
 /** leng-detail */
 .leng-detail {
     background-color: blue;
-    padding: .5em 2em;
 }
 
 .hover {
@@ -80,4 +79,10 @@ nav {
 
 .hover:hover .down {
     display: block;
+}
+
+.code-detail>p {
+    padding: .5em 0;
+    text-decoration: none;
+    color: black;
 }
