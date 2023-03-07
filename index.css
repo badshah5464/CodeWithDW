@@ -3,10 +3,10 @@
 /* * header-heading */
 .header-heading {
     text-align: center;
-    background-color: green;
+    background-color: white;
     padding: .2em 0;
     font-family: var(--header-heading);
-    font-weight: 600;
+    font-weight: 900;
     font-size: .9em;
     letter-spacing: .3em;
 }
@@ -94,4 +94,9 @@ nav {
 .code-page>ul>li>a {
     text-decoration: none;
     color: black;
+}
+
+main {
+    height: 100vh;
+    background: var(--red-royal);
 }
