@@ -16,6 +16,7 @@ html {
     --header-heading: 'Genos', sans-serif;
     --a-header: 'Tilt Warp', cursive;
     --logo-title: 'Fira Code', monospace;
+    --a-font: 'Ubuntu', sans-serif;
 
     /** Color's */
     --red-royal: linear-gradient(90deg, hwb(0 0% 85%) 0%, hwb(359 0% 50%) 50%, hwb(0 0% 85%) 100%);

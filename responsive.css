@@ -71,4 +71,9 @@
         top: 106px;
         /* top: 100px; */
     }
+
+    /* * leng-detail */
+    .down {
+        width: 40vw;
+    }
 }
