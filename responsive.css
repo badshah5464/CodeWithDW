@@ -3,6 +3,7 @@
         --main-margin: 50px 50px;
     }
 
+    /*! index-main */
     /* * main-title */
 
     .line {
@@ -29,13 +30,20 @@
 
 @media screen and (max-width:750px) {
 
+    /*! Index-main */
+
     /* * main-title */
-    .main-title-about>div>h2 {
+    .main-title-about>div:first-child>div>h2 {
         font-size: 3vw;
     }
 
     .line {
         width: 7vw;
+    }
+
+    .main-title-about>div:last-child>ul>li {
+        list-style: none;
+        padding: .5em .5em;
     }
 }
 
@@ -52,32 +60,6 @@
     .navigation-detail>ul>li {
         margin: 0 .5em;
     }
-
-    /* * leng-detail */
-    .down {
-        width: 30vw;
-    }
-
-    /*! Main  */
-    .index-main {
-        padding: 6.7em 0 0 0;
-    }
-
-    .main-title {
-        flex-direction: column;
-    }
-
-    .line {
-        width: 15vw;
-    }
-
-    .main-title-about {
-        margin: 5vh 0;
-    }
-}
-
-/* * Android response is here */
-@media screen and (max-width:450px) {
 
     .navigation-detail>ul {
         flex-direction: column;
@@ -97,6 +79,11 @@
         background-color: hwb(0 0% 15%);
         padding: .5em;
         box-shadow: -1px 1px 4px rgba(255, 255, 255, 0.5);
+        z-index: -1;
+        top: -1000px;
+        right: 0;
+        /* right: -1000px; */
+        /* top: 85px; */
         transition: .5s;
         -webkit-transition: .5s;
         -moz-transition: .5s;
@@ -107,10 +94,6 @@
         -moz-border-radius: 0 0 0 30px;
         -ms-border-radius: 0 0 0 30px;
         -o-border-radius: 0 0 0 30px;
-        top: -1000px;
-        right: 0;
-        /* right: -1000px; */
-        /* top: 85px; */
     }
 
     .navigation-response {
@@ -121,7 +104,51 @@
 
     /* * leng-detail */
     .down {
+        width: 30vw;
+    }
+
+    /*! index-main  */
+    .index-main {
+        padding: 6.7em 0 0 0;
+    }
+
+    .main-title {
+        flex-direction: column;
+    }
+
+    .line {
+        width: 15vw;
+    }
+
+    .main-title-about {
+        margin: 5vh 0;
+    }
+
+    .main-title-img>img {
+        width: 50vw;
+    }
+
+    /* * main-title */
+    .main-title-about>div:first-child>div>h2 {
+        font-size: 3.5vw;
+    }
+}
+
+/* * Android response is here */
+@media screen and (max-width:450px) {
+
+    /* * leng-detail */
+    .down {
         width: 40vw;
     }
 
+    /*! Index-main */
+
+   
+}
+
+@media screen and (max-width:265px) {
+    .hover {
+        margin: 0 .5em;
+    }
 }

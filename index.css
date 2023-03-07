@@ -199,13 +199,65 @@ nav {
 
 .main-title-about {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-title-about>div:first-child {
+    display: flex;
     align-items: center;
     animation: LeftToRight 1.5s ease forwards 1s;
     -webkit-animation: LeftToRight 1.5s ease forwards 1s;
 }
 
-.main-title-about>div>h2 {
+.main-title-about>div:first-child>div>h2 {
     font-family: var(--main-heading);
+}
+
+.main-title-about>div:last-child>ul {
+    display: flex;
+}
+
+.main-title-about>div:last-child>ul>li {
+    list-style: none;
+    padding: 1em 1em;
+    font-family: var(--a-font);
+}
+
+.main-title-about>div:last-child>ul>li:nth-child(5) {
+    height: auto;
+    overflow: hidden;
+    animation: LeftToRight 1s ease forwards 1s;
+    -webkit-animation: LeftToRight 1s ease forwards 1s;
+}
+
+.main-title-about>div:last-child>ul>li:nth-child(4) {
+    height: auto;
+    overflow: hidden;
+    animation: LeftToRight 1.3s ease forwards 1.3s;
+    -webkit-animation: LeftToRight 1.3s ease forwards 1.3s;
+}
+
+.main-title-about>div:last-child>ul>li:nth-child(3) {
+    height: auto;
+    overflow: hidden;
+    animation: LeftToRight 1.6s ease forwards 1.6s;
+    -webkit-animation: LeftToRight 1.6s ease forwards 1.6s;
+}
+
+.main-title-about>div:last-child>ul>li:nth-child(2) {
+    height: auto;
+    overflow: hidden;
+    animation: LeftToRight 1.9s ease forwards 1.9s;
+    -webkit-animation: LeftToRight 1.9s ease forwards 1.9s;
+}
+
+.main-title-about>div:last-child>ul>li:nth-child(1) {
+    height: auto;
+    overflow: hidden;
+    animation: LeftToRight 2.2s ease forwards 2.2s;
+    -webkit-animation: LeftToRight 2.2s ease forwards 2.2s;
 }
 
 .line {
