@@ -3,7 +3,7 @@
 /* * header-heading */
 .header-heading {
     text-align: center;
-    background-color: white;
+    background-color: wheat;
     padding: .2em 0;
     font-family: var(--header-heading);
     font-weight: 900;
@@ -18,7 +18,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: white;
+    color: wheat;
 }
 
 .logo {
@@ -48,7 +48,7 @@ nav {
 }
 
 .navigation>ul>li>a {
-    color: black;
+    color: white;
     text-decoration: none;
     display: flex;
     flex-direction: column;
@@ -67,7 +67,7 @@ nav {
 .leng-detail {
     background-color: hwb(0 0% 15%);
     box-shadow: inset 0 0 3px black;
-    color: white;
+    color: wheat;
 }
 
 .code-detail>p {
@@ -101,7 +101,7 @@ nav {
 
 .code-page>ul>li>a {
     text-decoration: none;
-    color: white;
+    color: wheat;
 }
 
 main {
