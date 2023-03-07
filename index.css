@@ -134,6 +134,15 @@ nav {
     box-shadow: inset 0 0 3px black;
     color: wheat;
     font-family: var(--a-font);
+    overflow: hidden;
+    height: auto;
+    animation: RightToLeft 1s ease forwards .5s;
+    -webkit-animation: RightToLeft 1s ease forwards .5s;
+    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px);
 }
 
 .code-detail>p {
