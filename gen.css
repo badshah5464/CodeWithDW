@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Genos&family=Tilt+Warp&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*! |||||||||||||||||||||||||||| */
+:root {
+    /** Font's */
+    --header-heading: 'Genos', sans-serif;
+    --a-header: 'Tilt Warp', cursive;
+}
+
+/*! |||||||||||||||||||||||||||  */
+
+.hover {
+    position: relative;
+    display: inline-block;
+}
+
+.down {
+    position: absolute;
+    display: none;
+}
+
+.hover:hover .down {
+    display: block;
+}
+
+/*! |||||||||||||||||||||||||||  */
