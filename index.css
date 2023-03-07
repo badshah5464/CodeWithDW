@@ -200,8 +200,8 @@ nav {
 .main-title-about {
     display: flex;
     align-items: center;
-    animation: RightToLeft 1.5s ease forwards 1s;
-    -webkit-animation: RightToLeft 1.5s ease forwards 1s;
+    animation: LeftToRight 1.5s ease forwards 1s;
+    -webkit-animation: LeftToRight 1.5s ease forwards 1s;
 }
 
 .main-title-about>div>h2 {
@@ -216,6 +216,6 @@ nav {
 
 .main-title-img>img {
     width: 30vw;
-    animation: LeftToRight 1.5s ease forwards 1s;
-    -webkit-animation: LeftToRight 1.5s ease forwards 1s;
+    animation: RightToLeft 1.5s ease forwards 1s;
+    -webkit-animation: RightToLeft 1.5s ease forwards 1s;
 }
