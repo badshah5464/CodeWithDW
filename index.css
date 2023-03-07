@@ -119,8 +119,8 @@ nav {
     display: none;
     overflow: hidden;
     height: auto;
-    animation: RightToLeft 1s ease forwards .5s;
-    -webkit-animation: RightToLeft 1s ease forwards .5s;
+    animation: LeftToRight 1s ease forwards .5s;
+    -webkit-animation: LeftToRight 1s ease forwards .5s;
     transform: translateX(0px);
     -webkit-transform: translateX(0px);
     -moz-transform: translateX(0px);
