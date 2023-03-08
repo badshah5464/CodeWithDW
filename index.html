@@ -106,19 +106,51 @@
             </div>
         </section>
 
-        <section class="img-change-container">
-            <div class="line-title">
-                <div class="lineTwo left-line"></div>
-                <div class="line-heading">
-                    <h2>High-light <br> Language</h2>
-                </div>
-                <div class="lineTwo right-line"></div>
+        <div class="line-title">
+            <div class="lineTwo left-line"></div>
+            <div class="line-heading">
+                <h2>High-light <br> Language</h2>
             </div>
+            <div class="lineTwo right-line"></div>
+        </div>
+
+        <section class="img-change-container">
+            <div class="img-detail fade">
+                <div class="detail">
+                    <p>HTML</p>
+                    <div><a href=""></a></div>
+                </div>
+                <div class="change-img">
+                    <img src="./HTML.png" alt="HTML-Img">
+                </div>
+            </div>
+
+            <div class="img-detail">
+                <div class="detail">
+                    <p>CSS</p>
+                    <div><a href=""></a></div>
+                </div>
+                <div class="change-img">
+                    <img src="./CSS.png" alt="HTML-Img">
+                </div>
+            </div>
+
+            <div class="img-detail">
+                <div class="detail">
+                    <p>HTML</p>
+                    <div><a href=""></a></div>
+                </div>
+                <div class="change-img">
+                    <img src="./JavaScript.png" alt="HTML-Img">
+                </div>
+            </div>
+
         </section>
     </main>
 
 </body>
 <script>
+    // Android-navigation
     let navigationIcon = document.getElementById("navigationIcon");
     let navigationDetail = document.getElementById("navigationDetail");
     navigationIcon.addEventListener("click", function () {
@@ -128,6 +160,21 @@
             navigationDetail.className = "navigation-detail";
         }
     })
+
+    // img-change
+    let slideImg = 0;
+    showImg();
+    function showImg() {
+        let i;
+        let slides = document.getElementsByClassName("img-detail");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideImg++;
+        if (slideImg > slides.length) { slideImg = 1 }
+        slides[slideImg - 1].style.display = "block";
+        setTimeout(showImg, 2000);
+    }
 </script>
 
 </html>

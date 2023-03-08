@@ -251,3 +251,22 @@ nav {
     -ms-border-radius: 20px 40px 20px 40px;
     -o-border-radius: 20px 40px 20px 40px;
 }
+
+/** img-change-container */
+.active {
+    background-color: #717171;
+}
+
+.fade {
+    animation: fade 1,5s;
+    -webkit-animation: fade 1,5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4;
+    }
+    to {
+        opacity: 1;
+    }
+}
