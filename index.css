@@ -240,17 +240,11 @@ nav {
     -webkit-animation: LeftToRight 2.2s ease forwards 0s;
 }
 
-.line {
-    border: .2em solid red;
-    margin: 0 2em;
-    width: 10vw;
-}
-
 .main-title-img>img {
     width: 30vw;
     box-shadow: 0 0 5px black;
-    animation: RightToLeft 4s ease forwards 0s;
-    -webkit-animation: RightToLeft 4s ease forwards 0s;
+    animation: RightToLeft 2s ease forwards 0s;
+    -webkit-animation: RightToLeft 2s ease forwards 0s;
     border-radius: 20px 40px 20px 40px;
     -webkit-border-radius: 20px 40px 20px 40px;
     -moz-border-radius: 20px 40px 20px 40px;

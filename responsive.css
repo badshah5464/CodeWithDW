@@ -26,6 +26,7 @@
     .down {
         width: 20vw;
     }
+
 }
 
 @media screen and (max-width:750px) {
@@ -45,11 +46,20 @@
         list-style: none;
         padding: .5em .5em;
     }
+
+    .line-heading {
+        width: 15vw;
+    }
+
+    .line-heading>h2 {
+        font-size: 1em;
+    }
 }
 
 @media screen and (max-width:600px) {
     :root {
         --main-margin: 25px 25px;
+        --main-padding: 0 25px;
     }
 
     /* * nav */
@@ -138,7 +148,11 @@
         height: auto;
         animation: BottomToTop 1s ease forwards 0s;
         -webkit-animation: BottomToTop 1s ease forwards 0s;
-}
+    }
+
+    .line-heading {
+        width: 25vw;
+    }
 }
 
 /* * Android response is here */
@@ -152,6 +166,10 @@
     /*! Index-main */
 
     .main-title-img>img {
+        width: 60vw;
+    }
+
+    .line-heading {
         width: 60vw;
     }
 }

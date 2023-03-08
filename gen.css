@@ -24,18 +24,29 @@ html {
 
     /** Margin & Padding */
     --main-margin: 50px 100px;
+    --main-padding: 0 50px;
 }
 
 /*! ||||||||||||||||||||||||||| */
+
+.line {
+    border: .2em solid red;
+    margin: 0 2em;
+    width: 10vw;
+}
+
 .line-title {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: var(--main-margin);
+    padding: var(main-padding);
 }
 
 .lineTwo {
-    border: 3px solid red;
+    border: .2em solid red;
     width: 30vw;
+    margin: 1em 2em;
 }
 
 .left-line {
@@ -49,7 +60,14 @@ html {
 }
 
 .line-heading {
-    padding: 0 3em;
+    width: 15vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line-heading>h2 {
+    font-size: 1.5em;
 }
 
 /*! |||||||||||||||||||||||||||  */
