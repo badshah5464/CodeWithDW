@@ -101,6 +101,20 @@ nav {
     -webkit-animation: RightToLeft 1s ease forwards 0s;
 }
 
+.navigation-mobile>i {
+    font-size: 1.5em;
+}
+
+.navigation-mobile>i:hover {
+    scale: .8;
+    color: red;
+    transition: .5s ease-in-out;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -ms-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+}
+
 /** leng-detail */
 .leng-detail {
     background-color: hwb(0 0% 15%);
@@ -114,7 +128,8 @@ nav {
     text-decoration: none;
     font-weight: 600;
     /*height: auto;
-    */animation: LeftToRight 2s ease forwards 0s;
+    */
+    animation: LeftToRight 2s ease forwards 0s;
     -webkit-animation: LeftToRight 2s ease forwards 0s;
 }
 

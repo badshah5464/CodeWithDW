@@ -136,9 +136,9 @@
     .main-title-img>img {
         overflow: hidden;
         height: auto;
-        animation: BottomToTop 1s ease forwards 1s;
-        -webkit-animation: BottomToTop 1s ease forwards 1s;
-    }
+        animation: BottomToTop 1s ease forwards 0s;
+        -webkit-animation: BottomToTop 1s ease forwards 0s;
+}
 }
 
 /* * Android response is here */
