@@ -54,6 +54,10 @@
     .line-heading>h2 {
         font-size: 1em;
     }
+
+    .a-btn {
+        padding: 1vw 1.5vw;
+    }
 }
 
 @media screen and (max-width:600px) {

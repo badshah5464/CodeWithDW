@@ -277,9 +277,23 @@ nav {
 .mySlides>img {
     box-shadow: 0 0 5px wheat;
     margin: 1em 0;
-    border-radius: 10px 20px 10px 20px;
-    -webkit-border-radius: 10px 20px 10px 20px;
-    -moz-border-radius: 10px 20px 10px 20px;
-    -ms-border-radius: 10px 20px 10px 20px;
-    -o-border-radius: 10px 20px 10px 20px;
+    border-radius: 20px 40px 20px 40px;
+    -webkit-border-radius: 20px 40px 20px 40px;
+    -moz-border-radius: 20px 40px 20px 40px;
+    -ms-border-radius: 20px 40px 20px 40px;
+    -o-border-radius: 20px 40px 20px 40px;
+}
+
+.mySlideshow-detail {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: .5em 0 1.5em 0;
+}
+
+.mySlideshow-detail>p {
+    font-family: var(--logo-title);
+    font-size: 1.1em;
+    letter-spacing: .1em;
+    font-weight: 600;
 }
