@@ -17,15 +17,15 @@
 </head>
 
 <body>
-    <!--? index-header  -->
+    <!--! index-header  -->
     <header class="index-header">
-        <!-- * header-heading -->
+        <!--? header-heading -->
         <section class="header-heading">
             <p>CodeWithDW.pvt</p>
         </section>
-        <!-- * Nav -->
+        <!--? Nav -->
         <nav>
-            <!-- logo -->
+            <!--* logo -->
             <div class="logo">
                 <div class="logo-img"><img src="./OnlyDW-MetalPNG.png" alt=""></div>
                 <div class="logo-name">
@@ -33,7 +33,7 @@
                                 class="fa-sharp fa-solid fa-greater-than"></i></span>DW</p>
                 </div>
             </div>
-            <!-- navigation -->
+            <!--* navigation -->
             <div class="navigation-mobile" id="navigationIcon">
                 <i class="fa-solid fa-bars"></i>
             </div>
@@ -48,9 +48,9 @@
                 </ul>
             </div>
         </nav>
-        <!-- * leng-detail -->
+        <!--? leng-detail -->
         <section class="leng-detail">
-            <!-- language -->
+            <!--* language -->
             <div class="code-detail hover">
                 <p>HTML</p>
                 <div class="code-page down">
@@ -59,7 +59,7 @@
                     </ul>
                 </div>
             </div>
-            <!-- language -->
+            <!--* language -->
             <div class="code-detail hover">
                 <p>CSS</p>
                 <div class="code-page down">
@@ -68,7 +68,7 @@
                     </ul>
                 </div>
             </div>
-            <!-- language -->
+            <!--* language -->
             <div class="code-detail hover">
                 <p>JavaScript</p>
                 <div class="code-page down">
@@ -79,19 +79,21 @@
             </div>
         </section>
     </header>
-
-    <!--* Main  -->
+    <!--! Main  -->
     <main class="index-main">
-
+        <!--? main-title  -->
         <section class="main-title">
+            <!--* main-title-about  -->
             <div class="main-title-about">
-                <div>
+                <!-- line-title -->
+                <div class="info-title">
                     <div class="line left-line"></div>
                     <div>
                         <h2>learning Fullstack <br> Web Development</h2>
                     </div>
                     <div class="line right-line"></div>
                 </div>
+                <!-- contains -->
                 <div>
                     <ul>
                         <li>HTML</li>
@@ -102,19 +104,58 @@
                     </ul>
                 </div>
             </div>
+            <!--* main-title-img  -->
             <div class="main-title-img">
                 <img src="./main-title-img.jpg" alt="main-title-image">
             </div>
         </section>
-
-        <section class="leng-img-change">
-            
+        <!--? img-change-container -->
+        <section class="img-change-container">
+            <!--* line-title -->
+            <div class="info-title">
+                <div class="lineWidth left-line"></div>
+                <div>
+                    <h2>Hight-Light <br> About Language</h2>
+                </div>
+                <div class="lineWidth right-line"></div>
+            </div>
+            <!-- change-image -->
+            <div class="change-img fade">
+                <div class="change-img-text">
+                    <p>HTML</p>
+                    <a href="" class="a-btn">Click Here!</a>
+                </div>
+                <div>
+                    <img src="./HTML.png" alt="">
+                </div>
+            </div>
+            <!-- change-image -->
+            <div class="change-img fade">
+                <div class="change-img-text">
+                    <p>CSS</p>
+                    <a href="" class="a-btn">Click Here!</a>
+                </div>
+                <div>
+                    <img src="./CSS.png" alt="">
+                </div>
+            </div>
+            <!-- change-image -->
+            <div class="change-img fade">
+                <div class="change-img-text">
+                    <p>JavaScript</p>
+                    <a href="" class="a-btn">Click Here!</a>
+                </div>
+                <div>
+                    <img src="./JavaScript.png" alt="">
+                </div>
+            </div>
         </section>
 
     </main>
 
 </body>
 <script>
+    // Android Icon Response
     let navigationIcon = document.getElementById("navigationIcon");
     let navigationDetail = document.getElementById("navigationDetail");
     navigationIcon.addEventListener("click", function () {
@@ -124,6 +165,21 @@
             navigationDetail.className = "navigation-detail";
         }
     })
+
+    // Change Image Automatically
+    let slideImage = 0;
+    showImage();
+    function showImage() {
+        let i;
+        let slide = document.getElementsByClassName("change-img");
+        for (i = 0; i < slide.length; i++) {
+            slide[i].style.display = "none";
+        }
+        slideImage++;
+        if (slideImage > slide.length) { slideImage = 1 }
+        slide[slideImage - 1].style.display = "block";
+        setTimeout(showImage, 5000);
+    }
 </script>
 
 </html>

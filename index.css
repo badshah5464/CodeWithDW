@@ -176,7 +176,6 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    z-index: -1;
 }
 
 .main-title-about {
@@ -184,27 +183,6 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-.main-title-about>div:first-child {
-    display: flex;
-    align-items: center;
-}
-
-.main-title-about>div:first-child>div>h2 {
-    font-family: var(--main-heading);
-    animation: TopToBottom .5s ease forwards 0s;
-    -webkit-animation: TopToBottom .5s ease forwards 0s;
-}
-
-.left-line {
-    animation: LeftToRight 1s ease forwards 0s;
-    -webkit-animation: LeftToRight 1s ease forwards 0s;
-}
-
-.right-line {
-    animation: RightToLeft 1s ease forwards 0s;
-    -webkit-animation: RightToLeft 1s ease forwards 0s;
 }
 
 .main-title-about>div:last-child>ul {
@@ -252,12 +230,6 @@ nav {
     -webkit-animation: LeftToRight 2.2s ease forwards 0s;
 }
 
-.line {
-    border: .2em solid red;
-    margin: 0 2em;
-    width: 10vw;
-}
-
 .main-title-img>img {
     width: 30vw;
     box-shadow: 0 0 5px black;
@@ -268,4 +240,50 @@ nav {
     -moz-border-radius: 20px 40px 20px 40px;
     -ms-border-radius: 20px 40px 20px 40px;
     -o-border-radius: 20px 40px 20px 40px;
+}
+
+/** img-change-container */
+.img-change-container {
+    position: relative;
+    margin: var(--main-margin);
+    padding: 1em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.fade {
+    animation: fade 1.5s;
+    -webkit-animation: fade 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.change-img>div>img {
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 15px black, 0 0 5px white;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.change-img-text {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1em 0;
 }
