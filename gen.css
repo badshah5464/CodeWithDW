@@ -17,7 +17,7 @@ html {
     --a-header: 'Tilt Warp', cursive;
     --logo-title: 'Fira Code', monospace;
     --a-font: 'Ubuntu', sans-serif;
-    --main-heading:'Josefin Sans', sans-serif;
+    --main-heading: 'Josefin Sans', sans-serif;
 
     /** Color's */
     --red-royal: linear-gradient(90deg, hwb(0 0% 85%) 0%, hwb(359 0% 50%) 50%, hwb(0 0% 85%) 100%);
@@ -25,6 +25,7 @@ html {
     /** Margin & Padding */
     --main-margin: 50px 100px;
 }
+
 /*! ||||||||||||||||||||||||||| */
 
 
@@ -37,7 +38,7 @@ html {
         -moz-transform: translateX(-1400px);
         -ms-transform: translateX(-1400px);
         -o-transform: translateX(-1400px);
-}
+    }
 
     100% {
         transform: translateX(0px);
@@ -55,7 +56,7 @@ html {
         -moz-transform: translateX(1000px);
         -ms-transform: translateX(1000px);
         -o-transform: translateX(1000px);
-}
+    }
 
     100% {
         transform: translateX(0);
@@ -73,6 +74,24 @@ html {
         -moz-transform: translateY(-1000px);
         -ms-transform: translateY(-1000px);
         -o-transform: translateY(-1000px);
+    }
+
+    100% {
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+    }
+}
+
+@keyframes BottomToTop {
+    0% {
+        transform: translateY(1000px);
+        -webkit-transform: translateY(1000px);
+        -moz-transform: translateY(1000px);
+        -ms-transform: translateY(1000px);
+        -o-transform: translateY(1000px);
 }
 
     100% {

@@ -132,6 +132,13 @@
     .main-title-about>div:first-child>div>h2 {
         font-size: 3.5vw;
     }
+
+    .main-title-img>img {
+        overflow: hidden;
+        height: auto;
+        animation: BottomToTop 1s ease forwards 1s;
+        -webkit-animation: BottomToTop 1s ease forwards 1s;
+    }
 }
 
 /* * Android response is here */
@@ -144,7 +151,9 @@
 
     /*! Index-main */
 
-   
+    .main-title-img>img {
+        width: 60vw;
+    }
 }
 
 @media screen and (max-width:265px) {

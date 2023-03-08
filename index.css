@@ -225,39 +225,39 @@ nav {
     font-family: var(--a-font);
 }
 
-.main-title-about>div:last-child>ul>li:nth-child(5) {
+.main-title-about>div:last-child>ul>li:nth-child(1) {
     height: auto;
     overflow: hidden;
-    animation: LeftToRight 1s ease forwards 1s;
-    -webkit-animation: LeftToRight 1s ease forwards 1s;
-}
-
-.main-title-about>div:last-child>ul>li:nth-child(4) {
-    height: auto;
-    overflow: hidden;
-    animation: LeftToRight 1.3s ease forwards 1.3s;
-    -webkit-animation: LeftToRight 1.3s ease forwards 1.3s;
-}
-
-.main-title-about>div:last-child>ul>li:nth-child(3) {
-    height: auto;
-    overflow: hidden;
-    animation: LeftToRight 1.6s ease forwards 1.6s;
-    -webkit-animation: LeftToRight 1.6s ease forwards 1.6s;
+    animation: RightToLeft 1s ease forwards 1s;
+    -webkit-animation: RightToLeft 1s ease forwards 1s;
 }
 
 .main-title-about>div:last-child>ul>li:nth-child(2) {
     height: auto;
     overflow: hidden;
-    animation: LeftToRight 1.9s ease forwards 1.9s;
-    -webkit-animation: LeftToRight 1.9s ease forwards 1.9s;
+    animation: RightToLeft 1.3s ease forwards 1.3s;
+    -webkit-animation: RightToLeft 1.3s ease forwards 1.3s;
 }
 
-.main-title-about>div:last-child>ul>li:nth-child(1) {
+.main-title-about>div:last-child>ul>li:nth-child(3) {
     height: auto;
     overflow: hidden;
-    animation: LeftToRight 2.2s ease forwards 2.2s;
-    -webkit-animation: LeftToRight 2.2s ease forwards 2.2s;
+    animation: RightToLeft 1.6s ease forwards 1.6s;
+    -webkit-animation: RightToLeft 1.6s ease forwards 1.6s;
+}
+
+.main-title-about>div:last-child>ul>li:nth-child(4) {
+    height: auto;
+    overflow: hidden;
+    animation: RightToLeft 1.9s ease forwards 1.9s;
+    -webkit-animation: RightToLeft 1.9s ease forwards 1.9s;
+}
+
+.main-title-about>div:last-child>ul>li:nth-child(5) {
+    height: auto;
+    overflow: hidden;
+    animation: RightToLeft 2.2s ease forwards 2.2s;
+    -webkit-animation: RightToLeft 2.2s ease forwards 2.2s;
 }
 
 .line {
@@ -268,6 +268,12 @@ nav {
 
 .main-title-img>img {
     width: 30vw;
+    box-shadow: 0 0 5px black;
     animation: RightToLeft 1.5s ease forwards 1s;
     -webkit-animation: RightToLeft 1.5s ease forwards 1s;
+    border-radius: 20px 40px 20px 40px;
+    -webkit-border-radius: 20px 40px 20px 40px;
+    -moz-border-radius: 20px 40px 20px 40px;
+    -ms-border-radius: 20px 40px 20px 40px;
+    -o-border-radius: 20px 40px 20px 40px;
 }
