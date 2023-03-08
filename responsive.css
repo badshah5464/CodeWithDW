@@ -60,6 +60,12 @@
     }
 }
 
+@media screen and (min-width:600px) {
+    .main-title {
+        margin: 25px;
+    }
+}
+
 @media screen and (max-width:600px) {
     :root {
         --main-margin: 25px 25px;
@@ -178,8 +184,27 @@
     }
 }
 
+@media screen and (max-width:330px) and (min-width:265px) {
+    .main-title-about>div:last-child>ul>li {
+        padding: 8px 1px;
+    }
+}
+
 @media screen and (max-width:265px) {
     .hover {
         margin: 0 .5em;
+    }
+
+    .main-title-about>div:last-child>ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo-name>p {
+        font-size: .7em;
+    }
+
+    .hover {
+        margin: 0 .1em;
     }
 }

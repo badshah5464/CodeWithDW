@@ -47,16 +47,31 @@ html {
     border: .2em solid red;
     width: 30vw;
     margin: 1em 2em;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
 }
 
 .left-line {
     animation: LeftToRight 1s ease forwards 0s;
     -webkit-animation: LeftToRight 1s ease forwards 0s;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
 }
 
 .right-line {
     animation: RightToLeft 1s ease forwards 0s;
     -webkit-animation: RightToLeft 1s ease forwards 0s;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
 }
 
 .line-heading {
@@ -69,6 +84,8 @@ html {
 .line-heading>h2 {
     font-size: 1.5em;
     font-family: var(--main-heading);
+    animation: BottomToTop 2s ease forwards 0s;
+    -webkit-animation: BottomToTop 2s ease forwards 0s;
 }
 
 /** a-btn  */
@@ -91,6 +108,11 @@ html {
     background-color: wheat;
     box-shadow: 0 0 5px red inset;
     color: black;
+    transition: .5s ease-in-out;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -ms-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
 }
 
 /*! Animation Class  */
