@@ -33,8 +33,8 @@ nav {
     justify-content: center;
     overflow: hidden;
     height: auto;
-    animation: LeftToRight 1s ease forwards 1s;
-    -webkit-animation: LeftToRight 1s ease forwards 1s;
+    animation: LeftToRight 1s ease forwards 0s;
+    -webkit-animation: LeftToRight 1s ease forwards 0s;
 }
 
 .logo-img>img {
@@ -59,8 +59,8 @@ nav {
 .navigation-detail {
     overflow: hidden;
     height: auto;
-    animation: RightToLeft 1s ease forwards 1s;
-    -webkit-animation: RightToLeft 1s ease forwards 1s;
+    animation: RightToLeft 1s ease forwards 0s;
+    -webkit-animation: RightToLeft 1s ease forwards 0s;
 }
 
 .navigation-detail>ul {
@@ -97,8 +97,8 @@ nav {
 
 .navigation-mobile {
     display: none;
-    animation: RightToLeft 1s ease forwards 1s;
-    -webkit-animation: RightToLeft 1s ease forwards 1s;
+    animation: RightToLeft 1s ease forwards 0s;
+    -webkit-animation: RightToLeft 1s ease forwards 0s;
 }
 
 /** leng-detail */
@@ -113,9 +113,9 @@ nav {
     padding: 5px 0;
     text-decoration: none;
     font-weight: 600;
-    height: auto;
-    animation: LeftToRight 2s ease forwards 2s;
-    -webkit-animation: LeftToRight 2s ease forwards 2s;
+    /*height: auto;
+    */animation: LeftToRight 2s ease forwards 0s;
+    -webkit-animation: LeftToRight 2s ease forwards 0s;
 }
 
 .hover {
@@ -178,18 +178,18 @@ nav {
 
 .main-title-about>div:first-child>div>h2 {
     font-family: var(--main-heading);
-    animation: TopToBottom .5s ease forwards .5s;
-    -webkit-animation: TopToBottom .5s ease forwards .5s;
+    animation: TopToBottom .5s ease forwards 0s;
+    -webkit-animation: TopToBottom .5s ease forwards 0s;
 }
 
 .left-line {
-    animation: LeftToRight 1s ease forwards 1s;
-    -webkit-animation: LeftToRight 1s ease forwards 1s;
+    animation: LeftToRight 1s ease forwards 0s;
+    -webkit-animation: LeftToRight 1s ease forwards 0s;
 }
 
 .right-line {
-    animation: RightToLeft 1s ease forwards 1s;
-    -webkit-animation: RightToLeft 1s ease forwards 1s;
+    animation: RightToLeft 1s ease forwards 0s;
+    -webkit-animation: RightToLeft 1s ease forwards 0s;
 }
 
 .main-title-about>div:last-child>ul {
@@ -205,36 +205,36 @@ nav {
 .main-title-about>div:last-child>ul>li:nth-child(5) {
     height: auto;
     overflow: hidden;
-    animation: LeftToRight 1s ease forwards 1s;
-    -webkit-animation: LeftToRight 1s ease forwards 1s;
+    animation: LeftToRight 1s ease forwards 0s;
+    -webkit-animation: LeftToRight 1s ease forwards 0s;
 }
 
 .main-title-about>div:last-child>ul>li:nth-child(4) {
     height: auto;
     overflow: hidden;
-    animation: LeftToRight 1.3s ease forwards 1.3s;
-    -webkit-animation: LeftToRight 1.3s ease forwards 1.3s;
+    animation: LeftToRight 1.3s ease forwards 0s;
+    -webkit-animation: LeftToRight 1.3s ease forwards 0s;
 }
 
 .main-title-about>div:last-child>ul>li:nth-child(3) {
     height: auto;
     overflow: hidden;
-    animation: LeftToRight 1.6s ease forwards 1.6s;
-    -webkit-animation: LeftToRight 1.6s ease forwards 1.6s;
+    animation: LeftToRight 1.6s ease forwards 0s;
+    -webkit-animation: LeftToRight 1.6s ease forwards 0s;
 }
 
 .main-title-about>div:last-child>ul>li:nth-child(2) {
     height: auto;
     overflow: hidden;
-    animation: LeftToRight 1.9s ease forwards 1.9s;
-    -webkit-animation: LeftToRight 1.9s ease forwards 1.9s;
+    animation: LeftToRight 1.9s ease forwards 0s;
+    -webkit-animation: LeftToRight 1.9s ease forwards 0s;
 }
 
 .main-title-about>div:last-child>ul>li:nth-child(1) {
     height: auto;
     overflow: hidden;
-    animation: LeftToRight 2.2s ease forwards 2.2s;
-    -webkit-animation: LeftToRight 2.2s ease forwards 2.2s;
+    animation: LeftToRight 2.2s ease forwards 0s;
+    -webkit-animation: LeftToRight 2.2s ease forwards 0s;
 }
 
 .line {
@@ -246,8 +246,8 @@ nav {
 .main-title-img>img {
     width: 30vw;
     box-shadow: 0 0 5px black;
-    animation: RightToLeft 4s ease forwards 1s;
-    -webkit-animation: RightToLeft 4s ease forwards 1s;
+    animation: RightToLeft 4s ease forwards 0s;
+    -webkit-animation: RightToLeft 4s ease forwards 0s;
     border-radius: 20px 40px 20px 40px;
     -webkit-border-radius: 20px 40px 20px 40px;
     -moz-border-radius: 20px 40px 20px 40px;
