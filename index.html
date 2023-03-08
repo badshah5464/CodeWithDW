@@ -114,38 +114,23 @@
             <div class="lineTwo right-line"></div>
         </div>
 
-        <section class="img-change-container">
-            <div class="img-detail fade">
-                <div class="detail">
-                    <p>HTML</p>
-                    <div><a href=""></a></div>
-                </div>
-                <div class="change-img">
-                    <img src="./HTML.png" alt="HTML-Img">
-                </div>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                
+                <img src="./HTML.png" style="width:100%">
             </div>
 
-            <div class="img-detail">
-                <div class="detail">
-                    <p>CSS</p>
-                    <div><a href=""></a></div>
-                </div>
-                <div class="change-img">
-                    <img src="./CSS.png" alt="HTML-Img">
-                </div>
+            <div class="mySlides fade">
+            
+                <img src="./CSS.png" style="width:100%">
             </div>
 
-            <div class="img-detail">
-                <div class="detail">
-                    <p>HTML</p>
-                    <div><a href=""></a></div>
-                </div>
-                <div class="change-img">
-                    <img src="./JavaScript.png" alt="HTML-Img">
-                </div>
+            <div class="mySlides fade">
+          
+                <img src="./JavaScript.png" style="width:100%">
             </div>
+        </div>
 
-        </section>
     </main>
 
 </body>
@@ -162,18 +147,19 @@
     })
 
     // img-change
-    let slideImg = 0;
-    showImg();
-    function showImg() {
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
         let i;
-        let slides = document.getElementsByClassName("img-detail");
+        let slides = document.getElementsByClassName("mySlides");
         for (i = 0; i < slides.length; i++) {
             slides[i].style.display = "none";
         }
-        slideImg++;
-        if (slideImg > slides.length) { slideImg = 1 }
-        slides[slideImg - 1].style.display = "block";
-        setTimeout(showImg, 2000);
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1 }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 2000);
     }
 </script>
 
