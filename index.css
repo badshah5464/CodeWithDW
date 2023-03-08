@@ -175,6 +175,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     z-index: -1;
+    padding: 3em 0 0 0;
 }
 
 .main-title-about {
@@ -296,4 +297,46 @@ nav {
     font-size: 1.1em;
     letter-spacing: .1em;
     font-weight: 600;
+}
+
+/** Language's */
+.leng {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(245, 222, 179, 0.3);
+    margin: 1em 0;
+}
+
+.leng-title {
+    width: 100vw;
+    margin: 0 3em 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+}
+
+.leng-title>h3 {
+    font-family: var(--header-heading);
+    padding: .3em 0;
+    color: black;
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+.leng-title>div>img {
+    width: 10vw;
+}
+
+.leng-title>a {
+    margin: 1em 0;
+}
+
+.index-code {
+    width: 150vw;
+    overflow: auto;
+    margin: 0 2em;
 }

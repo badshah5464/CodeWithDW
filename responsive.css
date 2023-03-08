@@ -9,6 +9,10 @@
     .line {
         margin: 0 1em;
     }
+
+    .index-code {
+        width: 200vw;
+    }
 }
 
 @media screen and (max-width:850px) {
@@ -27,6 +31,10 @@
         width: 20vw;
     }
 
+    pre[class*="language-"] {
+        height: 40vh;
+        font-size: .9em;
+    }
 }
 
 @media screen and (max-width:750px) {
@@ -58,11 +66,10 @@
     .a-btn {
         padding: 1vw 1.5vw;
     }
-}
 
-@media screen and (min-width:600px) {
-    .main-title {
-        margin: 25px;
+    pre[class*="language-"] {
+        height: 34vh;
+        font-size: .8em;
     }
 }
 
@@ -128,12 +135,14 @@
     }
 
     /*! index-main  */
+
     .index-main {
         padding: 6.7em 0 0 0;
     }
 
     .main-title {
         flex-direction: column;
+        margin: 25px;
     }
 
     .line {
@@ -162,6 +171,20 @@
 
     .line-heading {
         width: 25vw;
+    }
+
+    .leng {
+        flex-direction: column;
+    }
+
+    .index-code {
+        width: 100%;
+    }
+
+    pre[class*="language-"] {
+        height: 34vh;
+        font-size: .8em;
+        width: 100%;
     }
 }
 

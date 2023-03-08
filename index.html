@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <script src="https://kit.fontawesome.com/010f924f62.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/010f924f62.js" crossorigin="anonymous"></script>
     <!--* Logo -->
     <link rel="icon" href="./OnlyDW-MetalPNG.png">
     <title>CodeWithDW</title>
+    <link rel="stylesheet" href="./CodeWithDW.css">
     <!--* style's  -->
     <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="./gen.css">
@@ -54,7 +55,7 @@
                 <p>HTML</p>
                 <div class="code-page down">
                     <ul>
-                        <li><a href="">Basic HTML</a></li>
+                        <li><a href="#html">Basic HTML</a></li>
                     </ul>
                 </div>
             </div>
@@ -147,46 +148,65 @@
             <div class="lineTwo right-line"></div>
         </div>
         <!--* Language's -->
-        <section class="HTML-leg">
+        <section class="leng" id="html">
             <div class="leng-title">
                 <h3>HTML</h3>
-                <div><img src="" alt="" class="leng-img"></div>
+                <div><img src="./HTMLIcon.png" alt="" class="leng-img"></div>
+                <a href="" class="a-btn">Learn HTML</a>
             </div>
-            <div>
-                
+            <div class="index-code">
+                <pre>
+                    <code class="language-markup">
+                        &lt;!DOCTYPE html&gt;
+                        &lt;html&gt;
+                            &lt;head&gt;
+                                &lt;meta charset="UTF-8"&gt;
+                                &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+                                &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                                &lt;title&gt;document&lt;/title&gt;
+                            &lt;/head&gt;
+
+                            &lt;body&gt;
+                                &lt;h1&gt;This is a heading&lt;/h1&gt;
+                                &lt;p&gt;This is a paragraph.&lt;/p&gt;
+                            &lt;/body&gt;
+                        &lt;/html&gt;
+                    </code>
+                </pre>
             </div>
         </section>
 
     </main>
 
+    <script>
+        // Android-navigation
+        let navigationIcon = document.getElementById("navigationIcon");
+        let navigationDetail = document.getElementById("navigationDetail");
+        navigationIcon.addEventListener("click", function () {
+            if (navigationDetail.className === "navigation-detail") {
+                navigationDetail.className += " navigation-response";
+            } else {
+                navigationDetail.className = "navigation-detail";
+            }
+        })
+
+        // img-change
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 4000);
+        }
+    </script>
+    <script src="./CodeWithDW.js"></script>
 </body>
-<script>
-    // Android-navigation
-    let navigationIcon = document.getElementById("navigationIcon");
-    let navigationDetail = document.getElementById("navigationDetail");
-    navigationIcon.addEventListener("click", function () {
-        if (navigationDetail.className === "navigation-detail") {
-            navigationDetail.className += " navigation-response";
-        } else {
-            navigationDetail.className = "navigation-detail";
-        }
-    })
-
-    // img-change
-    let slideIndex = 0;
-    showSlides();
-
-    function showSlides() {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) { slideIndex = 1 }
-        slides[slideIndex - 1].style.display = "block";
-        setTimeout(showSlides, 4000);
-    }
-</script>
 
 </html>
