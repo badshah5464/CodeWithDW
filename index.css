@@ -21,11 +21,11 @@
 .header-heading>p {
     animation: TopToBottom .5s ease forwards .5s;
     -webkit-animation: TopToBottom .5s ease forwards .5s;
-    transform: translateX(1000px);
+    /* transform: translateX(1000px);
     -webkit-transform: translateX(1000px);
     -moz-transform: translateX(1000px);
     -ms-transform: translateX(1000px);
-    -o-transform: translateX(1000px);
+    -o-transform: translateX(1000px); */
 }
 
 /* * nav */
@@ -47,11 +47,11 @@ nav {
     height: auto;
     animation: LeftToRight 1s ease forwards .5s;
     -webkit-animation: LeftToRight 1s ease forwards .5s;
-    transform: translateY(0px);
+    /* transform: translateY(0px);
     -webkit-transform: translateY(0px);
     -moz-transform: translateY(0px);
     -ms-transform: translateY(0px);
-    -o-transform: translateY(0px);
+    -o-transform: translateY(0px); */
 }
 
 .logo-img>img {
@@ -78,11 +78,11 @@ nav {
     height: auto;
     animation: RightToLeft 1s ease forwards .5s;
     -webkit-animation: RightToLeft 1s ease forwards .5s;
-    transform: translateX(0px);
+    /* transform: translateX(0px);
     -webkit-transform: translateX(0px);
     -moz-transform: translateX(0px);
     -ms-transform: translateX(0px);
-    -o-transform: translateX(0px);
+    -o-transform: translateX(0px); */
 }
 
 .navigation-detail>ul {
@@ -207,12 +207,22 @@ nav {
 .main-title-about>div:first-child {
     display: flex;
     align-items: center;
-    animation: LeftToRight 1.5s ease forwards 1s;
-    -webkit-animation: LeftToRight 1.5s ease forwards 1s;
 }
 
 .main-title-about>div:first-child>div>h2 {
     font-family: var(--main-heading);
+    animation: TopToBottom .5s ease forwards .5s;
+    -webkit-animation: TopToBottom .5s ease forwards .5s;
+}
+
+.left-line {
+    animation: LeftToRight 1s ease forwards 1s;
+    -webkit-animation: LeftToRight 1s ease forwards 1s;
+}
+
+.right-line {
+    animation: RightToLeft 1s ease forwards 1s;
+    -webkit-animation: RightToLeft 1s ease forwards 1s;
 }
 
 .main-title-about>div:last-child>ul {
@@ -269,8 +279,8 @@ nav {
 .main-title-img>img {
     width: 30vw;
     box-shadow: 0 0 5px black;
-    animation: RightToLeft 1.5s ease forwards 1s;
-    -webkit-animation: RightToLeft 1.5s ease forwards 1s;
+    animation: RightToLeft 4s ease forwards 1s;
+    -webkit-animation: RightToLeft 4s ease forwards 1s;
     border-radius: 20px 40px 20px 40px;
     -webkit-border-radius: 20px 40px 20px 40px;
     -moz-border-radius: 20px 40px 20px 40px;

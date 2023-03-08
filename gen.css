@@ -33,12 +33,12 @@ html {
 
 @keyframes LeftToRight {
     0% {
-        transform: translateX(-1400px);
-        -webkit-transform: translateX(-1400px);
-        -moz-transform: translateX(-1400px);
-        -ms-transform: translateX(-1400px);
-        -o-transform: translateX(-1400px);
-    }
+        transform: translateX(-1000px);
+        -webkit-transform: translateX(-1000px);
+        -moz-transform: translateX(-1000px);
+        -ms-transform: translateX(-1000px);
+        -o-transform: translateX(-1000px);
+}
 
     100% {
         transform: translateX(0px);
