@@ -127,8 +127,6 @@ nav {
     padding: 5px 0;
     text-decoration: none;
     font-weight: 600;
-    /*height: auto;
-    */
     animation: LeftToRight 2s ease forwards 0s;
     -webkit-animation: LeftToRight 2s ease forwards 0s;
 }
@@ -195,16 +193,6 @@ nav {
     font-family: var(--main-heading);
     animation: TopToBottom .5s ease forwards 0s;
     -webkit-animation: TopToBottom .5s ease forwards 0s;
-}
-
-.left-line {
-    animation: LeftToRight 1s ease forwards 0s;
-    -webkit-animation: LeftToRight 1s ease forwards 0s;
-}
-
-.right-line {
-    animation: RightToLeft 1s ease forwards 0s;
-    -webkit-animation: RightToLeft 1s ease forwards 0s;
 }
 
 .main-title-about>div:last-child>ul {
