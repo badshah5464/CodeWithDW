@@ -170,7 +170,7 @@ nav {
 
 /** main-title */
 .main-title {
-    margin: var(--main-margin);
+    margin: 0 50px 25px 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
