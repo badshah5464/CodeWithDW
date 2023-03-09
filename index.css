@@ -27,7 +27,10 @@
 .main-title-about>div:first-child {
     display: flex;
     align-items: center;
-    margin: .5em 0;
+}
+
+.main-title-about>div:first-child>.line {
+    margin: 0 1em;
 }
 
 .main-title-about>div:first-child>div>h2 {
