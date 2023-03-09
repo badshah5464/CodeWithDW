@@ -31,16 +31,17 @@ pre[class*="language-"] {
 	hyphens: none;
 }
 
+/*! background change  */
 pre[class*="language-"],
 :not(pre)>code[class*="language-"] {
 	background: black;
 }
 
-/* Code blocks */
+/*! Code blocks */
 pre[class*="language-"] {
 	border: 2px dashed wheat;
 	overflow: auto;
-	padding: 1em;
+	padding: .5em;
 	font-family: 'Tilt Warp', cursive;
 	border-radius: .5em;
 	-webkit-border-radius: .5em;
@@ -138,7 +139,7 @@ code[class*="language-"] ::selection {
 .style .token.string,
 .token.variable,
 .token.inserted {
-	color: hsl(76, 21%, 52%);
+	color: hsl(110, 100%, 69%);
 	/* #8F9D6A */
 }
 
@@ -166,7 +167,7 @@ code[class*="language-"] ::selection {
 	cursor: help;
 }
 
-/* Markup */
+/*! Markup */
 .language-markup .token.tag,
 .language-markup .token.attr-name,
 .language-markup .token.punctuation {
@@ -717,6 +718,7 @@ div.code-toolbar>.toolbar>.toolbar-item>button {
 	-ms-user-select: none;
 }
 
+/*! Button */
 div.code-toolbar>.toolbar>.toolbar-item>a,
 div.code-toolbar>.toolbar>.toolbar-item>button,
 div.code-toolbar>.toolbar>.toolbar-item>span {
@@ -724,6 +726,7 @@ div.code-toolbar>.toolbar>.toolbar-item>span {
 	font-size: .8em;
 	/* padding: 0 .5em; */
 	/*  */
+	z-index: 2;
 	padding: .5em 1em;
 	margin: .5em;
 	font-weight: 600;

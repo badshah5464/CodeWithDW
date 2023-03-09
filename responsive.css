@@ -10,9 +10,6 @@
         margin: 0 1em;
     }
 
-    .index-code {
-        width: 200vw;
-    }
 }
 
 @media screen and (max-width:850px) {
@@ -31,10 +28,6 @@
         width: 20vw;
     }
 
-    pre[class*="language-"] {
-        height: 40vh;
-        font-size: .9em;
-    }
 }
 
 @media screen and (max-width:750px) {
@@ -67,10 +60,6 @@
         padding: 1vw 1.5vw;
     }
 
-    pre[class*="language-"] {
-        height: 34vh;
-        font-size: .8em;
-    }
 }
 
 @media screen and (max-width:600px) {
@@ -173,19 +162,6 @@
         width: 25vw;
     }
 
-    .leng {
-        flex-direction: column;
-    }
-
-    .index-code {
-        width: 100%;
-    }
-
-    pre[class*="language-"] {
-        height: 34vh;
-        font-size: .8em;
-        width: 100%;
-    }
 }
 
 /* * Android response is here */
