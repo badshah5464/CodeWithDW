@@ -18,6 +18,7 @@ html {
     --logo-title: 'Fira Code', monospace;
     --a-font: 'Ubuntu', sans-serif;
     --main-heading: 'Josefin Sans', sans-serif;
+    --normal-roboto:'Roboto', sans-serif;
 
     /** Color's */
     --red-royal: linear-gradient(90deg, #260000 0%, #800002 50%, #260000 100%);
