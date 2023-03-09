@@ -193,13 +193,18 @@ nav {
     background: var(--red-royal);
 }
 
-.footer-join {
-    background: url(./Footer-join.png);
+.footer-bg {
+    background: url(./footer-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
-    color: white;
+    position: relative;
+    height: 43vh;
 }
 
 .footer-contain {
-    padding: 5.5em 0 0 0;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    padding: 0 2em 1em 2em;
 }
+
