@@ -12,32 +12,19 @@ LineTwo Code method : [
 
 Index-main>leng : [
 
-    <section class="leng" id="html">
-            <div class="leng-title">
+    <section>
+        <div class="code" id="">
+            <div class="code-title">
                 <h3>HTML</h3>
                 <div><img src="./HTMLIcon.png" alt="" class="leng-img"></div>
-                <a href="" class="a-btn">Learn HTML</a>
+                <a href="" class="a-btn code-btn">Learn HTML</a>
             </div>
-            <div class="index-code">
-                <pre>
-                    <code class="language-markup">
-                        &lt;!DOCTYPE html&gt;
-                        &lt;html&gt;
-                            &lt;head&gt;
-                                &lt;meta charset="UTF-8"&gt;
-                                &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
-                                &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-                                &lt;title&gt;document&lt;/title&gt;
-                            &lt;/head&gt;
-
-                            &lt;body&gt;
-                                &lt;h1&gt;This is a heading&lt;/h1&gt;
-                                &lt;p&gt;This is a paragraph.&lt;/p&gt;
-                            &lt;/body&gt;
-                        &lt;/html&gt;
-                    </code>
-                </pre>
+            <div class="output-code">
+                <pre class="line-numbers code-display">
+                <code class="language-markup code-text" id="htmlCode"></code>
+            </pre>
             </div>
-        </section>
+        </div>
+    </section>
 
 ]

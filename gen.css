@@ -31,7 +31,7 @@ html {
 
 .line {
     border: .2em solid red;
-    margin: 0 2em;
+    margin: var(--main-margin);
     width: 10vw;
 }
 

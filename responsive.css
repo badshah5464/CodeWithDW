@@ -10,6 +10,10 @@
         margin: 0 1em;
     }
 
+    .output-code {
+        width: 70%;
+    }
+
 }
 
 @media screen and (max-width:850px) {
@@ -28,6 +32,13 @@
         width: 20vw;
     }
 
+    .code {
+        height: 45vh;
+    }
+
+    .code-display {
+        height: 45vh;
+    }
 }
 
 @media screen and (max-width:750px) {
@@ -58,6 +69,17 @@
 
     .a-btn {
         padding: 1vw 1.5vw;
+    }
+
+    .code {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 80vh;
+    }
+
+    .output-code {
+        width: 100%;
     }
 
 }
@@ -181,11 +203,32 @@
     .line-heading {
         width: 60vw;
     }
+
+    .code {
+        height: 66vh;
+    }
+
+    .code-display {
+        height: 40vh;
+    }
 }
 
-@media screen and (max-width:330px) and (min-width:265px) {
+@media screen and (max-width:350px) and (min-width:160px) {
     .main-title-about>div:last-child>ul>li {
         padding: 8px 1px;
+    }
+
+    .code {
+        height: 57vh;
+    }
+
+    .code-display {
+        height: 30vh;
+    }
+
+    code[class*="language-"],
+    pre[class*="language-"] {
+        font-size: .8em;
     }
 }
 

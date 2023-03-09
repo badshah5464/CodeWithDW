@@ -148,31 +148,49 @@
             <div class="lineTwo right-line"></div>
         </div>
         <!--* Language's -->
-        <section class="code" id="html">
-            <div class="code-title">
-                <h3>HTML</h3>
-                <div><img src="./HTMLIcon.png" alt="" class="leng-img"></div>
-                <a href="" class="a-btn code-btn">Learn HTML</a>
+        <hr>
+        <section>
+            <div class="code" id="html">
+                <div class="code-title">
+                    <h3>HTML</h3>
+                    <div><img src="./HTMLIcon.png" alt="" class="leng-img"></div>
+                    <a href="" class="a-btn code-btn">Learn HTML</a>
+                </div>
+                <div class="output-code">
+                    <pre class="code-display">
+                        <code class="language-markup code-text" id="htmlCode"></code>
+                    </pre>
+                </div>
             </div>
-            <div class="output-code">
-                <pre class="line-numbers code-display">
-                    <code class="language-markup code-text">
-                        &lt;!DOCTYPE html&gt;
-                        &lt;html&gt;
-                            &lt;head&gt;
-                                &lt;meta charset="UTF-8"&gt;
-                                &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
-                                &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-                                &lt;title&gt;document&lt;/title&gt;
-                            &lt;/head&gt;
-
-                            &lt;body&gt;
-                                &lt;h1&gt;This is a heading&lt;/h1&gt;
-                                &lt;p&gt;This is a paragraph.&lt;/p&gt;
-                            &lt;/body&gt;
-                        &lt;/html&gt;
-                    </code>
+        </section>
+        <hr>
+        <section>
+            <div class="code" id="">
+                <div class="code-title">
+                    <h3>HTML</h3>
+                    <div><img src="./HTMLIcon.png" alt="" class="leng-img"></div>
+                    <a href="" class="a-btn code-btn">Learn HTML</a>
+                </div>
+                <div class="output-code">
+                    <pre class="line-numbers code-display">
+                    <code class="language-markup code-text" id="htmlCode"></code>
                 </pre>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section>
+            <div class="code" id="">
+                <div class="code-title">
+                    <h3>HTML</h3>
+                    <div><img src="./HTMLIcon.png" alt="" class="leng-img"></div>
+                    <a href="" class="a-btn code-btn">Learn HTML</a>
+                </div>
+                <div class="output-code">
+                    <pre class="line-numbers code-display">
+                    <code class="language-markup code-text" id="htmlCode"></code>
+                </pre>
+                </div>
             </div>
         </section>
 
@@ -204,6 +222,26 @@
             if (slideIndex > slides.length) { slideIndex = 1 }
             slides[slideIndex - 1].style.display = "block";
             setTimeout(showSlides, 4000);
+        }
+
+        {
+            // HTML Code 
+            document.getElementById("htmlCode").innerHTML = `
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                    &lt;head&gt;
+                        &lt;meta charset="UTF-8"&gt;
+                        &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+                        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                        &lt;title&gt;document&lt;/title&gt;
+                    &lt;/head&gt;
+                    
+                    &lt;body&gt;
+                        &lt;h1&gt;This is a heading&lt;/h1&gt;
+                        &lt;p&gt;This is a paragraph.&lt;/p&gt;
+                    &lt;/body&gt;
+                &lt;/html&gt;
+            `
         }
     </script>
     <script src="./CodeWithDW.js"></script>

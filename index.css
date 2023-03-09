@@ -303,30 +303,21 @@ nav {
 /** Language's */
 
 .code {
-    position: relative;
-    height: 60vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    margin: 0 5em;
-    background-color: greenyellow;
+    margin: var(--main-margin);
 }
 
 .code-title {
-    position: absolute;
-    left: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: red;
 }
 
 .output-code {
-    position: absolute;
-    right: 0;
     width: 50%;
-    background-color: aqua;
 }
 
 .code-display {
