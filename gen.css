@@ -75,7 +75,7 @@ html {
 }
 
 .line-heading {
-    width: 15vw;
+    width: 30vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -92,7 +92,7 @@ html {
 .a-btn {
     box-shadow: inset 2px 2px 0 black, -2px -2px 0 black inset;
     color: wheat;
-    padding: .5vw 1vw;
+    padding: .5em .5em;
     text-decoration: none;
     font-family: var(--a-font);
     border-radius: 10px;

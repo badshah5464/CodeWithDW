@@ -39,7 +39,7 @@
             </div>
             <div class="navigation-detail" id="navigationDetail">
                 <ul>
-                    <li><a href=""><span class="navigation-icon"><i
+                    <li><a href="#"><span class="navigation-icon"><i
                                     class="fa-solid fa-house"></i></span><span>Home</span></a></li>
                     <li><a href=""><span class="navigation-icon"><i class="fa-solid fa-code"></i></span><span>Basic
                                 Starting</span></a></li>
@@ -64,7 +64,7 @@
                 <p>CSS</p>
                 <div class="code-page down">
                     <ul>
-                        <li><a href="">Basic CSS</a></li>
+                        <li><a href="#css">Basic CSS</a></li>
                     </ul>
                 </div>
             </div>
@@ -73,7 +73,7 @@
                 <p>JavaScript</p>
                 <div class="code-page down">
                     <ul>
-                        <li><a href="">Basic JavaScript</a></li>
+                        <li><a href="#javaScript">Basic JavaScript</a></li>
                     </ul>
                 </div>
             </div>
@@ -165,30 +165,30 @@
         </section>
         <hr>
         <section>
-            <div class="code" id="">
+            <div class="code" id="css">
                 <div class="code-title">
-                    <h3>HTML</h3>
-                    <div><img src="./HTMLIcon.png" alt="" class="leng-img"></div>
-                    <a href="" class="a-btn code-btn">Learn HTML</a>
+                    <h3>CSS</h3>
+                    <div><img src="./CSSIcon.png" alt="" class="leng-img"></div>
+                    <a href="" class="a-btn code-btn">Learn CSS</a>
                 </div>
                 <div class="output-code">
-                    <pre class="line-numbers code-display">
-                    <code class="language-markup code-text" id="htmlCode"></code>
+                    <pre class="code-display">
+                    <code class="language-css code-text" id="cssCode"></code>
                 </pre>
                 </div>
             </div>
         </section>
         <hr>
         <section>
-            <div class="code" id="">
+            <div class="code" id="javaScript">
                 <div class="code-title">
-                    <h3>HTML</h3>
-                    <div><img src="./HTMLIcon.png" alt="" class="leng-img"></div>
-                    <a href="" class="a-btn code-btn">Learn HTML</a>
+                    <h3>JavaScript</h3>
+                    <div><img src="./JavaScriptIcon.png" alt="" class="leng-img"></div>
+                    <a href="" class="a-btn code-btn">Learn JavaScript</a>
                 </div>
                 <div class="output-code">
-                    <pre class="line-numbers code-display">
-                    <code class="language-markup code-text" id="htmlCode"></code>
+                    <pre class="code-display">
+                    <code class="language-js code-text" id="javaScriptCode"></code>
                 </pre>
                 </div>
             </div>
@@ -229,6 +229,7 @@
             document.getElementById("htmlCode").innerHTML = `
                 &lt;!DOCTYPE html&gt;
                 &lt;html&gt;
+
                     &lt;head&gt;
                         &lt;meta charset="UTF-8"&gt;
                         &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
@@ -240,7 +241,35 @@
                         &lt;h1&gt;This is a heading&lt;/h1&gt;
                         &lt;p&gt;This is a paragraph.&lt;/p&gt;
                     &lt;/body&gt;
+                    
                 &lt;/html&gt;
+            `;
+            // CSS Code
+            document.getElementById("cssCode").innerHTML = `
+            body {
+                background-color: green;
+            }
+
+            h1 {
+                color: red;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            p {
+                font-size: 25px;
+                text-shadow: 2px 2px 4px black;
+            }
+            `;
+            // JavaScript
+            document.getElementById("javaScriptCode").innerHTML = `
+                let fruits = ["Apple","Banana","kiwi","orange"];
+
+                text = "";
+                for (i = 0; i < fruits.length; i++) {
+                    text += fruits[i] + "&lt;br&gt;";
+                }
+
+                document.getElementById("demo").innerHTML = fruits;
             `
         }
     </script>

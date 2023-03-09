@@ -39,6 +39,10 @@
     .code-display {
         height: 45vh;
     }
+
+    .line-heading {
+        width: 45vw;
+    }
 }
 
 @media screen and (max-width:750px) {
@@ -59,16 +63,12 @@
         padding: .5em .5em;
     }
 
-    .line-heading {
-        width: 15vw;
-    }
-
     .line-heading>h2 {
         font-size: 1em;
     }
 
     .a-btn {
-        padding: 1vw 1.5vw;
+        padding: 1.5vw 2vw;
     }
 
     .code {
@@ -134,6 +134,25 @@
         -o-border-radius: 0 0 0 30px;
     }
 
+    .navigation-detail>ul>li {
+        border-bottom: 2px solid white;
+        width: 100%;
+        padding: 0 0 .8em 0;
+    }
+
+    .navigation-detail>ul>li:last-child {
+        border: none;
+        padding: 0;
+    }
+
+    .navigation-detail>ul>li>a {
+        color: black;
+    }
+
+    .navigation-detail>ul>li>a:hover {
+        color: wheat;
+    }
+
     .navigation-response {
         padding: .5em;
         top: 85px;
@@ -153,7 +172,7 @@
 
     .main-title {
         flex-direction: column;
-        margin: 25px;
+        padding: 0;
     }
 
     .line {
@@ -181,12 +200,11 @@
     }
 
     .line-heading {
-        width: 25vw;
+        width: 55vw;
     }
 
 }
 
-/* * Android response is here */
 @media screen and (max-width:450px) {
 
     /* * leng-detail */
@@ -211,6 +229,11 @@
     .code-display {
         height: 40vh;
     }
+
+    .line-heading {
+        width: 150vw;
+    }
+
 }
 
 @media screen and (max-width:350px) and (min-width:160px) {

@@ -131,6 +131,14 @@ nav {
     -webkit-animation: LeftToRight 2s ease forwards 0s;
 }
 
+.code-detail>p:hover {
+    color: black;
+}
+
+.code-detail>p:active {
+    color: black;
+}
+
 .hover {
     position: relative;
     display: inline-block;
@@ -152,12 +160,30 @@ nav {
 }
 
 .code-page {
-    padding: .5em 2em;
+    padding: .2em 1em;
+}
+
+.code-page>ul>li {
+    list-style: none;
+    padding: .5em 0;
+    border-bottom: 2px solid white;
+}
+
+.code-page>ul>li:last-child {
+    border: none;
 }
 
 .code-page>ul>li>a {
     text-decoration: none;
     color: wheat;
+}
+
+.code-page>ul>li>a:hover {
+    color: black;
+}
+
+.code-page>ul>li>a:active {
+    color: black;
 }
 
 /*! MAIN */
@@ -189,6 +215,7 @@ nav {
 .main-title-about>div:first-child {
     display: flex;
     align-items: center;
+    margin: .5em 0;
 }
 
 .main-title-about>div:first-child>div>h2 {
