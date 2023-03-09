@@ -190,6 +190,16 @@ nav {
 
 /*! Footer */
 .index-footer {
-    background-color: lightgreen;
-    height: 40vh;
+    background: var(--red-royal);
+}
+
+.footer-join {
+    background: url(./Footer-join.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.footer-contain {
+    padding: 5.5em 0 0 0;
 }
