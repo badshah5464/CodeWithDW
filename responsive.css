@@ -234,9 +234,17 @@
         width: 150vw;
     }
 
+    .code-title {
+        padding: 0 0 .5em 0;
+    }
+    
+    .output-code {
+        padding: .5em 0 0 0;
+    }
+
 }
 
-@media screen and (max-width:350px) and (min-width:160px) {
+@media screen and (max-width:350px) and (min-width:220px) {
     .main-title-about>div:last-child>ul>li {
         padding: 8px 1px;
     }
