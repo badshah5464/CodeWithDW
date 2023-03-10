@@ -18,6 +18,9 @@
         width: 70%;
     }
 
+    .footer-bg {
+        height: 28vh;
+    }
 }
 
 @media screen and (max-width:850px) {
@@ -96,6 +99,14 @@
 
     .footer-leng-about {
         margin: 0 0 1em 0;
+    }
+
+    .footer-contact>ul {
+        flex-direction: row;
+    }
+
+    .footer-contact>ul>li>a>img {
+        width: 6vw;
     }
 }
 
@@ -277,6 +288,10 @@
     code[class*="language-"],
     pre[class*="language-"] {
         font-size: .8em;
+    }
+
+    .footer-bg {
+        height: 50vh;
     }
 }
 
