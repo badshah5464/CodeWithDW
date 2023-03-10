@@ -226,10 +226,31 @@ nav {
     color: wheat;
     padding: 0 .3em;
     border-right: 1px solid white;
+    font-family: var(--a-font);
 }
 
 .leng-with-footer>a:last-child {
     border: none;
+}
+
+.leng-with-footer>a:hover {
+    color: red;
+    transition: .5s ease-in-out;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -ms-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+}
+
+.leng-with-footer>a:active {
+    color: red;
+    transition: .5s ease-in-out;
+}
+
+.link-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .footer-contact>div {
