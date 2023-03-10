@@ -1,6 +1,6 @@
 /*! MAIN */
 .index-main {
-    background: var(--red-royal);
+    /* background: var(--red-royal); */
     padding: 7.1em 0 0 0;
     text-shadow: 0 0 1px black;
     color: white;
@@ -148,8 +148,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* margin: var(--main-margin); */
-    padding: var(--main-margin);
+    margin: var(--main-margin);
+    /* padding: var(--main-margin); */
 }
 
 .code-title {

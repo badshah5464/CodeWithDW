@@ -1,6 +1,6 @@
-@media screen and (max-width:1415px) and (min-width:1075px) {
+/* @media screen and (max-width:1415px) and (min-width:1075px) {
     
-}
+} */
 
 @media screen and (max-width:1075px) {
     :root {
@@ -206,6 +206,8 @@
     .line-heading {
         width: 55vw;
     }
+
+    /*! Footer */
 
 }
 
