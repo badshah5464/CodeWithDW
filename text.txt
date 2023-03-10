@@ -27,7 +27,7 @@ Index-main>leng : [
     </section>
 ];
 
-header Code : [
+index-header Code : [
     
     <header class="index-header">
 
@@ -107,7 +107,7 @@ header Code : [
 
 ];
 
-footer Code : [
+index-footer Code : [
 
         <footer class="index-footer" id="footer">
 
