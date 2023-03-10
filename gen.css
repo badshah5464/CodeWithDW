@@ -10,7 +10,7 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
+body.index-body {
     background: var(--red-royal);
 }
 
