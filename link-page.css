@@ -10,11 +10,25 @@ aside {
     top: 7.2vw;
     height: 85.5vh;
     overflow: auto;
-    padding: .5em 1em;
     border-right: 3px solid red;
-    background-color: rgba(255, 0, 0, 0.1);
+    width: 15vw;
+}
+
+aside>ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 aside>ul>li {
     list-style: none;
+    margin: .4em 0;
+    background-color: aqua;
+    width: 100%;
+}
+
+aside>ul>li>a {
+    color: white;
+    text-decoration: none;
+    /* padding: .4vh 2vw; */
 }
