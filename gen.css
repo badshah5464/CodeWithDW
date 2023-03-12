@@ -25,11 +25,17 @@ body.index-body {
     --normal-roboto: 'Roboto', sans-serif;
 
     /** Color's */
+
+    /** Gradient's  (background: --var(variableName);)*/
+    /** main theme  */
     --red-royal: linear-gradient(90deg, #260000 0%, #800002 50%, #260000 100%);
 
     /** Margin & Padding */
     --main-margin: 50px 100px;
     --main-padding: 0 50px;
+
+    /** Responsive margin and padding  */
+    --MP-all-3vw: 3vw 3vw;
 }
 
 /*! ||||||||||||||||||||||||||| */

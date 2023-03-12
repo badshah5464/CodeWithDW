@@ -3,32 +3,60 @@
     padding: 7em 0 0 0;
     position: relative;
     display: flex;
+    position: relative;
 }
 
-aside {
+.linkPage-aside {
     position: sticky;
-    top: 7.2vw;
-    height: 85.5vh;
+    top: 15vh;
+    /* top: 9vw; */
+    /* height: 10vw; */
+    height: 84.7vh;
     overflow: auto;
     border-right: 3px solid red;
+    border-bottom: 3px solid red;
     width: 15vw;
+    /* width: 35vh; */
 }
 
-aside>ul {
+.linkPage-aside>ul {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-aside>ul>li {
+.linkPage-aside>ul>li {
     list-style: none;
-    margin: .4em 0;
-    background-color: aqua;
     width: 100%;
+    padding: .5vh 0 .5vh .4em;
+    border-top: 2px solid white;
 }
 
-aside>ul>li>a {
+.linkPage-aside>ul>li:last-child {
+    border-bottom: 2px solid white;
+}
+
+.linkPage-aside>ul>li>a {
     color: white;
     text-decoration: none;
-    /* padding: .4vh 2vw; */
+    font-size: 1vw;
+    font-family: var(--a-font);
+}
+
+.linkPage-aside>ul>li>a:hover {
+    color: lightgray;
+}
+
+.aside-heading {
+    padding: .2vw 0;
+    font-size: 1vw;
+    text-align: center;
+    color: wheat;
+    font-family: var(--header-heading);
+}
+
+.page-topic {
+    margin: var(--MP-all-3vw);
+    width: 100%;
+    color: white;
 }
