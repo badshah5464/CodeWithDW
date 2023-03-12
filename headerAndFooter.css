@@ -190,7 +190,8 @@ nav {
 
 /*! Footer */
 .index-footer {
-    background: var(--red-royal);
+    background-color: transparent;
+    z-index: 9;
 }
 
 .footer-bg {

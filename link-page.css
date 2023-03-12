@@ -2,23 +2,19 @@
 .linked-page {
     padding: 7em 0 0 0;
     position: relative;
-}
-
-.linked-page {
     display: flex;
 }
 
 aside {
-    width: 15%;
-    border-right: 2px solid white;
-}
-
-.aside-list {
-    height: 100vh;
+    position: sticky;
+    top: 7.2vw;
+    height: 85.5vh;
     overflow: auto;
+    padding: .5em 1em;
+    border-right: 3px solid red;
+    background-color: rgba(255, 0, 0, 0.1);
 }
 
-.page-topic {
-    width: 85%;
-    /* background-color: blue; */
+aside>ul>li {
+    list-style: none;
 }
