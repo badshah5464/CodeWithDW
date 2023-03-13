@@ -18,6 +18,7 @@ const page = [
         pageName: "page 04",
     },
 ];
+
 page.map(function (x) {
     pageLink.innerHTML += `
         <ul>
