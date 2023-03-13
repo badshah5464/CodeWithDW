@@ -22,7 +22,7 @@ const page = [
 page.map(function (x) {
     pageLink.innerHTML += `
         <ul>
-            <li><a href="${x.link}">${x.pageName}</a></li>
+            <li><a href="${x.link}" target="_blank">${x.pageName}</a></li>
         </ul>
     `
 })

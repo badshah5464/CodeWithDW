@@ -8,18 +8,12 @@
 
 .linkPage-aside {
     position: sticky;
-    top: 15vh;
-    height: 84.7vh;
+    top: 13.8vh;
+    height: 86vh;
     overflow: auto;
     border-right: 3px solid red;
     border-bottom: 3px solid red;
     width: 15vw;
-}
-
-.page-link>ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .page-link>ul>li {
