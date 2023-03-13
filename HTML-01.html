@@ -19,7 +19,78 @@
 
 <body class="index-body">
 
-    <header class="index-header" id="indexHeader"></header>
+    <header class="index-header">
+        <section class="header-heading">
+            <p>CodeWithDW.pvt</p>
+        </section>
+
+        <nav>
+
+            <div class="logo">
+                <div class="logo-img"><img src="./OnlyDW-MetalPNG.png" alt=""></div>
+                <div class="logo-name">
+                    <p><span>C</span>ode<span>W</span>ith<span class="logo-name-greaterthan"><i
+                                class="fa-sharp fa-solid fa-greater-than"></i></span>DW</p>
+                </div>
+            </div>
+
+            <div class="navigation-mobile" id="navigationIcon">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="navigation-detail" id="navigationDetail">
+                <ul>
+                    <li><a href="./index.html"><span class="navigation-icon"><i
+                                    class="fa-solid fa-house"></i></span><span>Home</span></a></li>
+                    <li><a href="./HTML-01.html"><span class="navigation-icon"><i
+                                    class="fa-solid fa-code"></i></span><span>Basic Starting</span></a></li>
+                    <li><a href="#footer"><span class="navigation-icon"><i
+                                    class="fa-solid fa-circle-info"></i></span><span>About</span></a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <section class="leng-detail">
+
+            <div class="code-detail hover">
+                <p>HTML</p>
+                <div class="code-page down">
+                    <ul>
+                        <li><a href="#html">Basic HTML</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="code-detail hover">
+                <p>CSS</p>
+                <div class="code-page down">
+                    <ul>
+                        <li><a href="#css">Basic CSS</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="code-detail hover">
+                <p>JavaScript</p>
+                <div class="code-page down">
+                    <ul>
+                        <li><a href="#javaScript">Basic JavaScript</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            let navigationIcon = document.getElementById("navigationIcon");
+            let navigationDetail = document.getElementById("navigationDetail");
+            navigationIcon.addEventListener("click", function () {
+                if (navigationDetail.className === "navigation-detail") {
+                    navigationDetail.className += " navigation-response";
+                } else {
+                    navigationDetail.className = "navigation-detail";
+                }
+            })
+        </script>
+    </header>
 
     <main class="linked-page">
         <aside class="linkPage-aside">
@@ -39,7 +110,7 @@
     </main>
 
     <footer class="index-footer" id="footer"></footer>
-    
+
     <script src="./headerAndFooter.js"></script>
     <script src="./CodeWithDW.js"></script>
     <script src="./linkPage.js"></script>
