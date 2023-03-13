@@ -18,82 +18,8 @@
 </head>
 
 <body class="index-body">
-    <!--? Global Header  -->
-    <header class="index-header">
-
-        <!-- * header-heading -->
-        <section class="header-heading">
-            <p>CodeWithDW.pvt</p>
-        </section>
-        <!-- * Nav -->
-        <nav>
-            <!-- logo -->
-            <div class="logo">
-                <div class="logo-img"><img src="./OnlyDW-MetalPNG.png" alt=""></div>
-                <div class="logo-name">
-                    <p><span>C</span>ode<span>W</span>ith<span class="logo-name-greaterthan"><i
-                                class="fa-sharp fa-solid fa-greater-than"></i></span>DW</p>
-                </div>
-            </div>
-            <!-- navigation -->
-            <div class="navigation-mobile" id="navigationIcon">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-            <div class="navigation-detail" id="navigationDetail">
-                <ul>
-                    <li><a href="#"><span class="navigation-icon"><i
-                                    class="fa-solid fa-house"></i></span><span>Home</span></a></li>
-                    <li><a href="./HTML-01.html"><span class="navigation-icon"><i
-                                    class="fa-solid fa-code"></i></span><span>Basic Starting</span></a></li>
-                    <li><a href="#footer"><span class="navigation-icon"><i
-                                    class="fa-solid fa-circle-info"></i></span><span>About</span></a></li>
-                </ul>
-            </div>
-        </nav>
-        <!-- * leng-detail -->
-        <section class="leng-detail">
-            <!-- language -->
-            <div class="code-detail hover">
-                <p>HTML</p>
-                <div class="code-page down">
-                    <ul>
-                        <li><a href="#html">Basic HTML</a></li>
-                    </ul>
-                </div>
-            </div>
-            <!-- language -->
-            <div class="code-detail hover">
-                <p>CSS</p>
-                <div class="code-page down">
-                    <ul>
-                        <li><a href="#css">Basic CSS</a></li>
-                    </ul>
-                </div>
-            </div>
-            <!-- language -->
-            <div class="code-detail hover">
-                <p>JavaScript</p>
-                <div class="code-page down">
-                    <ul>
-                        <li><a href="#javaScript">Basic JavaScript</a></li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <script>
-            let navigationIcon = document.getElementById("navigationIcon");
-            let navigationDetail = document.getElementById("navigationDetail");
-            navigationIcon.addEventListener("click", function () {
-                if (navigationDetail.className === "navigation-detail") {
-                    navigationDetail.className += " navigation-response";
-                } else {
-                    navigationDetail.className = "navigation-detail";
-                }
-            })
-        </script>
-
-    </header>
+    <!--? index Header  -->
+    <header class="index-header" id="indexHeader"></header>
 
     <!--* Main  -->
     <main class="index-main">
@@ -212,13 +138,11 @@
 
     <!--? Global Footer  -->
     <footer class="index-footer" id="footer"></footer>
-    <script src="./footer.js"></script>
-
+    
     <script>
         // img-change
         let slideIndex = 0;
         showSlides();
-        
 
         function showSlides() {
             let i;
@@ -231,11 +155,11 @@
             slides[slideIndex - 1].style.display = "block";
             setTimeout(showSlides, 4000);
         }
-
+        
         {
             // HTML Code 
             document.getElementById("htmlCode").innerHTML = `
-                &lt;!DOCTYPE html&gt;
+            &lt;!DOCTYPE html&gt;
                 &lt;html&gt;
 
                     &lt;head&gt;
@@ -248,7 +172,7 @@
                     &lt;body&gt;
                         &lt;h1&gt;This is a heading&lt;/h1&gt;
                         &lt;p&gt;This is a paragraph.&lt;/p&gt;
-                    &lt;/body&gt;
+                        &lt;/body&gt;
                     
                 &lt;/html&gt;
             `;
@@ -263,7 +187,7 @@
                 color: red;
                 font-family: Arial, Helvetica, sans-serif;
             }
-
+            
             p {
                 font-size: 25px;
                 text-shadow: 2px 2px 4px black;
@@ -285,6 +209,8 @@
 
         
     </script>
+
+    <script src="./headerAndFooter.js"></script>
     <script src="./CodeWithDW.js"></script>
 </body>
 
